@@ -2,57 +2,86 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>2-column flexbox</title>
 
     <meta name="author" content="Aidan Harding">
     <meta name="description" content="Learning HTML"> <!--Webpage Description -->
     <meta name="keywords" content="Learning, Tag, HTML, Layout">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-    *{
+<style>
+   *{
      box-sizing: border-box;
-    }
+   }
 
-    .header   {
+   .header   {
+   border: 1px solid black;
+   padding: 15px;
+}
 
-    border: 1px solid black;
-    padding: 15px;
-    }
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+}
 
-    .menu {
-    width: 25%;
-    float: left;
-    padding: 15px;
-    border: 1px solid black;
-    }
+.main {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+}
 
-    .main {
-    width: 75%;
-    float: left;
-    padding: 15px;
-    border: 1px solid black;
-    }
-
-    .aside {
-      width: 25%
-      float: left;
-      padding: 15px;
-      border: 1px solid black;
-    }
+.aside {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+}
 
 
-    .footer {
-      border: 1px solid red;
-      padding: 15px
-    }
+.footer {
+  border: 1px solid black;
+  padding: 15px
+}
 
-    </style>
-
+</style>
   </head>
+
   <body>
 
+ <div class="header"><header><h1>things</h1></header></div>
+
+<div class="menu">
+ <ul>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+  <li>things</li>
+ </ul>
+</div>
+
+
+<div class="main">
+      <h1>The things</h1>
+      <p>I can put lots of things in here.</p>
+      <p>I can put lots of things in here too!</p>
+    </div>
+
+    <div class="aside">
+   <h1>The Aside Space</h1>
+   <p>Giberish.</p>
+   <br><br>
+   </div>
+
+   <div class="footer">
+   <br><br>
+   <h1>The Quote</h1>
+   <p>Special Symbol and other things</p>
+   </div>
 
 
   </body>
+
 </html>
